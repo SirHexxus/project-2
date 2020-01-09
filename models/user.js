@@ -1,38 +1,25 @@
-module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define(
-    "User",
-    {
-      firstName: {
-        type: DataTypes.STRING
-      },
-      lastName: {
-        type: DataTypes.STRING
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      phoneNumber: {
-        type: DataTypes.STRING
-      },
-      isDesigner: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
-      }
-    },
-    {
-      classMethods: {
-        associate: function(models) {
-          User.hasMany(models.Measurement);
-        }
-      }
-    }
-  );
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+const bcrypt = require("bcryptjs"); 
 
-  return User;
+const UserSchema = new Schema({
+  firstName: { type: String, default: '', required: true },
+  lastName: { type: String, required: true },
+  email: {type: String, required: true },
+  password: {type: String, required: true },
+  isDeleted: {type: Boolean, default: false },
+  date: { type: Date, default: Date.now }
+});
+
+UserSchema.methods.generateHash = function(password) {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
+
+UserSchema.methods.validPassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+};
+
+const User = mongoose.model("User", UserSchema);
+
+module.exports = User;
+
