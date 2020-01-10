@@ -1,34 +1,6 @@
 const db = require("../models");
 
 module.exports = app => {
-  //user create/register
-  app.post("/api/user/:id", (req, res) => {
-    db.User.create(req.body).then(dbProj => {
-      res.json(dbProj);
-    });
-  });
-
-  //delete user acc
-  app.delete("/api/user/:id", (req, res) => {
-    db.User.destroy({
-      where: {
-        id: req.params.id
-      }
-    }).then(dbProj => {
-      res.json(dbProj);
-    });
-  });
-
-  //update user info
-  app.put("/api/user/:id", (req, res) => {
-    db.User.update(req.body, {
-      where: {
-        id: req.params.id
-      }
-    }).then(dbProj => {
-      res.json(dbProj);
-    });
-  });
 
   // Create a new client, measurement sheet
   app.post("/api/NewMeasurement", (req, res) => {
@@ -38,12 +10,37 @@ module.exports = app => {
   });
 
   //  Should this be a res.render?  -James
-  //Get route to view list for projects under user
-  app.get("/api/user/:id", (req, res) => {
-    db.Measurement.findAll({
+  //get the measurements for 1 client
+  app.get("/api/measurement/:id", (req, res) => {
+    db.Measurement.findOne({
       where: {
-        foreignKey: req.params.id
+        id: req.params.id
       }
+    }).then(dbProj => {
+      res.json(dbProj);
+    });
+  });
+
+  //Get user profile info by id
+  app.get("/api/user/:id", (req, res) => {
+    db.User.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(dbProj => {
+      res.json(dbProj);
+    });
+  });
+
+  //Get all client measurements for the user
+  app.get("/api/measurements/:id", (req, res) => {
+    db.User.findAll({
+      include: [{
+        model: db.Measurement,
+        where: {
+          UserId: req.params.id
+        }
+      }]
     }).then(dbProj => {
       res.json(dbProj);
     });

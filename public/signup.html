@@ -1,7 +1,3 @@
-<!--
-Author: James Stacy
-Author URL: http://www.JMSWebDesigns.com
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,46 +13,43 @@ Author URL: http://www.JMSWebDesigns.com
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- Link to Stylesheet -->
-    <link rel="stylesheet" href="../public/styles/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Stitches and Tape</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="navbar-fixed">
-            <!-- Nav bar -->
-            <nav class="nav-wrapper">
-                <div class="container">
-                    <a href="#" class="brand-logo left hide-on-med-and-down flow-text">Stitches & Tape</a>
-                    <a href="#" class="brand-logo center hide-on-med-and-up flow-text">Stitches & Tape</a>
-                    <a href="#" class="sidenav-trigger" data-target='mobile-menu'>
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#" class="logged-in">New Measurements</a></li>
-                        <li><a href="#" class="logged-in">View Measurements</a></li>
-                        <li><a href="#signup" class="logged-out">Sign Up</a></li>
-                        <li><a href="account.html" class="logged-out">Sign In</a></li>
-                        <li><a href="index.html" class="logged-in">Log Out</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <!-- Mobile Nav Bar -->
-                    <ul class="sidenav grey lighten-2" id='mobile-menu'>
-                        <li><a href="#" class="logged-in">Account</a></li>
-                        <li><a href="#" class="logged-in">New Measurements</a></li>
-                        <li><a href="#" class="logged-in">View Measurements</a></li>
-                        <li><a href="#signup" class="logged-out">Sign Up</a></li>
-                        <li><a href="#signin" class="logged-out">Sign In</a></li>
-                        <li><a href="index.html" class="logged-in">Log Out</a></li>
+  <header>
+    <div class="navbar-fixed">
+      <!-- Nav bar -->
+      <nav class="nav-wrapper">
+        <div class="container">
+          <a href="/" class="brand-logo left hide-on-med-and-down flow-text">Stitches & Tape</a>
+          <a href="/" class="brand-logo center hide-on-med-and-up flow-text">Stitches & Tape</a>
+          <a href="#" class="sidenav-trigger" data-target='mobile-menu'>
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <!-- <li><a href="#" class="logged-in">New Measurements</a></li> -->
+            <li><a href="/">Information Page</a></li>
+            <li><a href="/login" id='signin' class="logged-out">Sign In</a></li>
+            <li><a href="/" id='logout' class="logged-in">Log Out</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+          </ul>
+          <!-- Mobile Nav Bar -->
+          <ul class="sidenav grey lighten-2" id='mobile-menu'>
+            <!-- <li><a href="#" class="logged-in">Account</a></li> -->
+            <!-- <li><a href="/account" class="logged-in">New Measurements</a></li> -->
+            <li><a href="/account" class="logged-in">View Measurements</a></li>
+            <li><a href="/login" class="logged-out">Sign In</a></li>
+            <li><a href="/" class="logged-in">Log Out</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
 
-                        <li><a href="#">Contact</a></li>
-
-                    </ul>
-                </div>
-            </nav>
+          </ul>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
     <p>Lorem ipsum dolor sit amit, consetetur sadipscing eliter, sed diam voluptua. At vero eso et accusam et justo duo
         dolores et ea rebum. </p>
@@ -64,15 +57,15 @@ Author URL: http://www.JMSWebDesigns.com
         <ul class="register-form">
             <h2>New Account:</h2>
             <li>
-                <input type="text" name="username" placeholder="Username" required />
+                <input type="text" id="username" name="username" placeholder="Username" required />
                 <div class="clear"> </div>
             </li>
             <li>
-                <input type="email" name="email" placeholder="example@email.com" required />
+                <input type="email" id="email" name="email" placeholder="example@email.com" required />
                 <div class="clear"> </div>
             </li>
             <li>
-                <input type="password" name="password" placeholder="Password" required />
+                <input type="password" id="password" name="password" placeholder="Password" required />
                 <div class="clear"> </div>
             </li>
             <li>
@@ -81,19 +74,10 @@ Author URL: http://www.JMSWebDesigns.com
             </li>
             <!-- this checkbox needs to be made visible -->
             <label class="checkbox">
-                <input type="checkbox" name="checkbox" checked=""> Please inform me of
+                <input type="checkbox" id="update" name="checkbox" checked="0"> Please inform me of
                 upcoming Changes, Promotions, and News</label><br>
             <input type="submit" onclick="myFunction()" value="Create Account">
             <div class="clear"> </div>
-        </ul>
-        <ul class="login-form">
-            <h3>Login:</h3>
-            <div>
-                <li><input type="text" placeholder="Username" required /></li>
-                <li> <input type="password" placeholder="Password" required /></li>
-                <!-- <h4>I forgot my Password!</h4> -->
-                <input type="submit" onclick="myFunction()" value="Login">
-            </div>
         </ul>
     </form>
     </div>
@@ -112,7 +96,7 @@ Author URL: http://www.JMSWebDesigns.com
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Link to app.js -->
-    <script src='../public/js/app.js'></script>
+    <script src='/javascript/app.js'></script>
 
     <!-- 
         The Javascript for this page will either send a POST request to create a new User, or send a GET

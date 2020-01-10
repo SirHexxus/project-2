@@ -13,46 +13,46 @@
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- Link to Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Stitches and Tape</title>
 </head>
 
 <body>
   <div class="screen">
     <!-- Header -->
-    <header>
-      <div class="navbar-fixed">
-        <!-- Nav bar -->
-        <nav class="nav-wrapper">
-          <div class="container">
-            <a href="#" class="brand-logo left hide-on-med-and-down flow-text">Stitches & Tape</a>
-            <a href="#" class="brand-logo center hide-on-med-and-up flow-text">Stitches & Tape</a>
-            <a href="#" class="sidenav-trigger" data-target='mobile-menu'>
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a data-target="clientinfo" class="modal-trigger logged-in">New Measurements</a></li>
-              <li><a href="#" class="logged-in">View Measurements</a></li>
-              <li><a href="./account.html" class="logged-out">Sign Up</a></li>
-              <li><a href="./account.html" class="logged-out">Sign In</a></li>
-              <li><a href="./index.html" class="logged-in">Log Out</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- Mobile Nav Bar -->
-            <ul class="sidenav grey lighten-2" id='mobile-menu'>
-              <li><a href="#" class="logged-in">Account</a></li>
-              <li><a data-target="clientinfo" class="btn modal-trigger logged-in">New Measurements</a></li>
-              <li><a href="#" class="logged-in">View Measurements</a></li>
-              <li><a href="account.html" class="logged-out">Sign Up</a></li>
-              <li><a href="account.html" class="logged-out">Sign In</a></li>
-              <li><a href="index.html" class="logged-in">Log Out</a></li>
-              <li><a href="#">Contact</a></li>
+  <header>
+    <div class="navbar-fixed">
+      <!-- Nav bar -->
+      <nav class="nav-wrapper">
+        <div class="container">
+          <a href="/" class="brand-logo left hide-on-med-and-down flow-text">Stitches & Tape</a>
+          <a href="/" class="brand-logo center hide-on-med-and-up flow-text">Stitches & Tape</a>
+          <a href="#" class="sidenav-trigger" data-target='mobile-menu'>
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Information Page</a></li>
+            <li><a data-target="clientinfo" class="modal-trigger logged-in">New Measurements</a></li>
+            <!-- <li><a href="/signup" id='signup' class="logged-out">Sign Up</a></li> -->
+            <!-- <li><a href="/login" id='signin' class="logged-out">Sign In</a></li> -->
+            <li><a href="/" id='logout' class="logged-in">Log Out</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+          </ul>
+          <!-- Mobile Nav Bar -->
+          <ul class="sidenav grey lighten-2" id='mobile-menu'>
+            <!-- <li><a href="#" class="logged-in">Account</a></li> -->
+            <li><a href="/account" class="logged-in">New Measurements</a></li>
+            <li><a href="/account" class="logged-in">View Measurements</a></li>
+            <li><a href="/signup" class="logged-out">Sign Up</a></li>
+            <li><a href="/login" class="logged-out">Sign In</a></li>
+            <li><a href="/" class="logged-in">Log Out</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
 
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
     <section class='section container'>
       <div class="row">
@@ -69,11 +69,6 @@
             </tr>
           </thead>
           <tbody class='project-table'>
-            <tr>
-              <td>Devyn</td>
-              <td>Shirt and Pants</td>
-              <td><a data-target="measurement-table" class='btn modal-trigger'>Measurements</a></td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -107,101 +102,101 @@
             <div class="input-field col s6">
               <i class="material-icons prefix">account_circle</i>
               <input type="text" disabled id='client-name-mt'>
-              <label for='client-name' class=active>Client Name (Required)</label>
+              <label for='client-name-mt' class=active></label>
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">assignment</i>
               <input type="text" disabled id='project-name-mt'>
-              <label for='project-name' class=active>Project Name (Required)</label>
+              <label for='project-name-mt' class=active></label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">email</i>
-              <input id="email-mt" disabled type="email" placeholder="youremail@mail.com" class="validate">
-              <label for="email">Email</label>
+              <input id="email-mt" disabled placeholder='' type="email" class="validate">
+              <label for="email-mt"></label>
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">phone</i>
-              <input id="phone-mt" disabled placeholder='(555) 555-5555' type="tel" class="validate">
-              <label for="phone">Telephone</label>
+              <input id="phone-mt" disabled placeholder='' type="tel" class="validate">
+              <label for="phone-mt"></label>
             </div>
           </div>
           <div class="row">
             <!-- Suit or Dress Size -->
             <div class="input-field col s3">
               <i class="material-icons prefix">wc</i>
-              <input type="text" disabled placeholder='Enter Size and select type below' id='formal-sz-mt'>
-              <label for='formal-sz' class=active>Suit or Dress Size</label>
+              <input type="text" disabled placeholder='' id='formal-sz-mt'>
+              <label for='formal-sz-mt' class=active>Suit or Dress Size</label>
             </div>
             <!-- Shirt Size -->
             <div class="input-field col s3">
               <i class="material-icons prefix">perm_identity</i>
-              <input type="text" disabled placeholder='Enter Size' id='shirt-sz-mt'>
-              <label for='shirt-sz' class=active>Shirt Size</label>
+              <input type="text" disabled placeholder='' id='shirt-sz-mt'>
+              <label for='shirt-sz-mt' class=active>Shirt Size</label>
             </div>
             <!-- Pant Waist -->
             <div class="input-field col s3">
               <i class='material-icons prefix'>accessibility</i>
-              <input type="text" disabled placeholder="Enter Size" id='pant-waist-mt'>
-              <label for="pant-waist" class='active'>Pant Waist</label>
+              <input type="text" disabled placeholder='' id='pant-waist-mt'>
+              <label for="pant-waist-mt" class='active'>Pant Waist</label>
             </div>
             <!-- Pant Inseam -->
             <div class="input-field col s3">
               <i class="material-icons prefix">accessibility</i>
-              <input type="text" disabled placeholder='Enter Size' id='pant-inseam-mt'>
-              <label for='pant-inseam' class=active>Pant Inseam</label>
+              <input type="text" disabled placeholder='' id='pant-inseam-mt'>
+              <label for='pant-inseam-mt' class=active>Pant Inseam</label>
             </div>
             <!-- Hat Size -->
             <div class="input-field col s3">
               <i class='material-icons prefix'>insert_emoticon</i>
-              <input type="text" disabled placeholder="Enter Size" id='hat-sz-mt'>
-              <label for="hat-sz" class='active'>Hat Size</label>
+              <input type="text" disabled placeholder='' id='hat-sz-mt'>
+              <label for="hat-sz-mt" class='active'>Hat Size</label>
             </div>
             <!-- Shoe Size -->
             <div class="input-field col s3">
               <i class="material-icons prefix">directions_walk</i>
-              <input type="text" disabled id='shoe-sz-mt'>
-              <label for='shoe-sz' class=active>Shoe Size</label>
+              <input type="text" disabled placeholder='' id='shoe-sz-mt'>
+              <label for='shoe-sz-mt' class=active>Shoe Size</label>
             </div>
             <!-- Height -->
             <div class="input-field col s3">
               <i class='material-icons prefix'>nature_people</i>
-              <input type="text" disabled id='height-mt'>
-              <label for="height" class='active'>Height</label>
+              <input type="text" disabled placeholder='' id='height-mt'>
+              <label for="height-mt" class='active'>Height</label>
             </div>
             <!-- Weight -->
             <div class="input-field col s3">
               <i class="material-icons prefix">money</i>
-              <input type="text" disabled id='weight-mt'>
-              <label for='weight' class=active>Weight</label>
+              <input type="text" disabled placeholder='' id='weight-mt'>
+              <label for='weight-mt' class=active>Weight</label>
             </div>
             <!-- Hair Color -->
             <div class="input-field col s3">
               <i class='material-icons prefix'>face</i>
-              <input type="text" disabled id='hair-color-mt'>
-              <label for="hair-color" class='active'>Hair Color</label>
+              <input type="text" disabled placeholder='' id='hair-color-mt'>
+              <label for="hair-color-mt" class='active'>Hair Color</label>
             </div>
             <!-- Eye Color -->
             <div class="input-field col s3">
               <i class="material-icons prefix">visibility</i>
-              <input type="text" disabled id='eye-color-mt'>
-              <label for='eye-color' class=active>Eye Color</label>
+              <input type="text" disabled placeholder='' id='eye-color-mt'>
+              <label for='eye-color-mt' class=active>Eye Color</label>
             </div>
             <!-- Handedness -->
             <div class="input-field col s3">
               <i class='material-icons prefix'>pan_tool</i>
-              <input type="text" disabled id='handedness-mt'>
-              <label for='handedness' class=active>Handedness:</label>
+              <input type="text" disabled placeholder='' id='handedness-mt'>
+              <label for='handedness-mt' class=active>Handedness:</label>
             </div>
             <div class="row">
               <form class='col s12'>
                 <div class="row">
                   <div class="input-field col s12">
                     <i class='material-icons prefix'>color_lens</i>
-                    <textarea name="color-pref" class='materialize-textarea' disabled id="color-pref-mt" cols="30"
+                    <textarea name="color-pref" class='materialize-textarea' disabled placeholder='' id="color-pref-mt" cols="30"
                       rows="10"></textarea>
-                    <label for="color-pref">Color Preferences</label>
+                    <label for="color-pref-mt">Color Preferences</label>
                   </div>
                 </div>
               </form>
@@ -226,245 +221,245 @@
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='head-diam-mt'>
-              <label for='head-diam' class=active>Head Around</label>
+              <label for='head-diam-mt' class=active>Head Around</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='head-over-mt'>
-              <label for='head-over' class=active>Head Over Top</label>
+              <label for='head-over-mt' class=active>Head Over Top</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-mt'>
-              <label for='neck' class=active>Neck</label>
+              <label for='neck-mt' class=active>Neck</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-fr-mt'>
-              <label for='neck-fr' class=active>Neck Height, Front</label>
+              <label for='neck-fr-mt' class=active>Neck Height, Front</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-bk-mt'>
-              <label for='neck-bk' class=active>Neck Height, Back</label>
+              <label for='neck-bk-mt' class=active>Neck Height, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bust-mt'>
-              <label for='bust' class=active>Bust</label>
+              <label for='bust-mt' class=active>Bust</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='chest-mt'>
-              <label for='chest' class=active>Chest</label>
+              <label for='chest-mt' class=active>Chest</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bust-fr-mt'>
-              <label for='bust-fr' class=active>Bust, Front</label>
+              <label for='bust-fr-mt' class=active>Bust, Front</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bust-bk-mt'>
-              <label for='bust-bk' class=active>Bust, Back</label>
+              <label for='bust-bk-mt' class=active>Bust, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bust-ptp-mt'>
-              <label for='bust-ptp' class=active>Bust, Point-to-Point</label>
+              <label for='bust-ptp-mt' class=active>Bust, Point-to-Point</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='chest-fr-mt'>
-              <label for='chest-fr' class=active>Chest, Front</label>
+              <label for='chest-fr-mt' class=active>Chest, Front</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='shoulder-fr-mt'>
-              <label for='shoulder-fr' class=active>Shoulder, Front</label>
+              <label for='shoulder-fr-mt' class=active>Shoulder, Front</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='shoulder-bk-mt'>
-              <label for='shoulder-bk' class=active>Shoulder, Back</label>
+              <label for='shoulder-bk-mt' class=active>Shoulder, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='shoulder-sm-mt'>
-              <label for='shoulder-sm' class=active>Shoulder, Seam</label>
+              <label for='shoulder-sm-mt' class=active>Shoulder, Seam</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='slope-mt'>
-              <label for='slope' class=active>Slope</label>
+              <label for='slope-mt' class=active>Slope</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='shoulder-ctr-fr-mt'>
-              <label for='shoulder-ctr-fr' class=active>Shoulder Tip to Center Waist, Front</label>
+              <label for='shoulder-ctr-fr-mt' class=active>Shoulder Tip to Center Waist, Front</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='shoulder-ctr-bk-mt'>
-              <label for='shoulder-ctr-bk' class=active>Shoulder Tip to Center Waist, Back</label>
+              <label for='shoulder-ctr-bk-mt' class=active>Shoulder Tip to Center Waist, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='armscye-fr-mt'>
-              <label for='armscye-fr' class=active>Armscye, Front</label>
+              <label for='armscye-fr-mt' class=active>Armscye, Front</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='armhole-snug-mt'>
-              <label for='armhole-snug' class=active>Armhole, Snug</label>
+              <label for='armhole-snug-mt' class=active>Armhole, Snug</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='underarm-sm-mt'>
-              <label for='underarm-sm' class=active>Underarm Seam</label>
+              <label for='underarm-sm-mt' class=active>Underarm Seam</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='waist-mt'>
-              <label for='waist' class=active>Waist</label>
+              <label for='waist-mt' class=active>Waist</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-to-waist-fr-mt'>
-              <label for='neck-to-waist-fr' class=active>Neck to Waist, Front</label>
+              <label for='neck-to-waist-fr-mt' class=active>Neck to Waist, Front</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-to-waist-bk-mt'>
-              <label for='neck-to-waist-bk' class=active>Neck to Waist, Back</label>
+              <label for='neck-to-waist-bk-mt' class=active>Neck to Waist, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='hip-hipbone-mt'>
-              <label for='hip-hipbone' class=active>Hip at the Hipbones</label>
+              <label for='hip-hipbone-mt' class=active>Hip at the Hipbones</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='hip-waist-mt'>
-              <label for='hip-waist' class=active>Hip to Waist</label>
+              <label for='hip-waist-mt' class=active>Hip to Waist</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='lg-hip-across-mt'>
-              <label for='lg-hip-across' class=active>Large Hip, Across</label>
+              <label for='lg-hip-across-mt' class=active>Large Hip, Across</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='lg-hip-vert-mt'>
-              <label for='lg-hip-vert' class=active>Large Hip, Vertical</label>
+              <label for='lg-hip-vert-mt' class=active>Large Hip, Vertical</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='neck-flr-mt'>
-              <label for='neck-flr' class=active>Neck to Floor</label>
+              <label for='neck-flr-mt' class=active>Neck to Floor</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='waist-flr-mt'>
-              <label for='waist-flr' class=active>Waist to Floor</label>
+              <label for='waist-flr-mt' class=active>Waist to Floor</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='waist-to-below-knee-mt'>
-              <label for='waist-to-below-knee' class=active>Waist to Just Below Knee</label>
+              <label for='waist-to-below-knee-mt' class=active>Waist to Just Below Knee</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='inseam-mt'>
-              <label for='inseam' class=active>Inseam</label>
+              <label for='inseam-mt' class=active>Inseam</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='knee-ankle-mt'>
-              <label for='knee-ankle' class=active>Knee to Ankle</label>
+              <label for='knee-ankle-mt' class=active>Knee to Ankle</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='upper-th-mt'>
-              <label for='upper-th' class=active>Upper Thigh</label>
+              <label for='upper-th-mt' class=active>Upper Thigh</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='upper-th-flx-mt'>
-              <label for='upper-th-flx' class=active>Upper Thigh, Flexed</label>
+              <label for='upper-th-flx-mt' class=active>Upper Thigh, Flexed</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='calf-mt'>
-              <label for='calf' class=active>Calf</label>
+              <label for='calf-mt' class=active>Calf</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='ankle-mt'>
-              <label for='ankle' class=active>Ankle</label>
+              <label for='ankle-mt' class=active>Ankle</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='overall-rise-mt'>
-              <label for='overall-rise' class=active>Overall Rise</label>
+              <label for='overall-rise-mt' class=active>Overall Rise</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='rise-fr-mt'>
-              <label for='rise-fr' class=active>Rise, Front</label>
+              <label for='rise-fr-mt' class=active>Rise, Front</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='rise-bk-mt'>
-              <label for='rise-bk' class=active>Rise, Back</label>
+              <label for='rise-bk-mt' class=active>Rise, Back</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='arm-length-mt'>
-              <label for='arm-length' class=active>Arm Length</label>
+              <label for='arm-length-mt' class=active>Arm Length</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='overarm-mt'>
-              <label for='overarm' class=active>Overarm</label>
+              <label for='overarm-mt' class=active>Overarm</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='arm-to-elbow-mt'>
-              <label for='arm-to-elbow' class=active>Arm to Elbow</label>
+              <label for='arm-to-elbow-mt' class=active>Arm to Elbow</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='elbow-to-wrist-mt'>
-              <label for='elbow-to-wrist' class=active>Elbow to Wrist</label>
+              <label for='elbow-to-wrist-mt' class=active>Elbow to Wrist</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bicep-mt'>
-              <label for='bicep' class=active>Bicep</label>
+              <label for='bicep-mt' class=active>Bicep</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='bicep-flx-mt'>
-              <label for='bicep-flx' class=active>Bicep, Flexed</label>
+              <label for='bicep-flx-mt' class=active>Bicep, Flexed</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='elbow-mt'>
-              <label for='elbow' class=active>Elbow</label>
+              <label for='elbow-mt' class=active>Elbow</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='wrist-mt'>
-              <label for='wrist' class=active>Wrist</label>
+              <label for='wrist-mt' class=active>Wrist</label>
             </div>
             <div class="input-field col s3">
               <input type="text" disabled placeholder='' id='hand-mt'>
-              <label for='hand' class=active>Hand (Balled into a Fist)</label>
+              <label for='hand-mt' class=active>Hand (Balled into a Fist)</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s4">
               <input type="text" disabled placeholder='' id='custom1-mt'>
-              <label for='custom1' class=active>Custom Measurement #1</label>
+              <label for='custom1-mt' class=active>Custom Measurement #1</label>
             </div>
             <div class="input-field col s4">
               <input type="text" disabled placeholder='' id='custom2-mt'>
-              <label for='custom2' class=active>Custom Measurement #2</label>
+              <label for='custom2-mt' class=active>Custom Measurement #2</label>
             </div>
             <div class="input-field col s4">
               <input type="text" disabled placeholder='' id='custom3-mt'>
-              <label for='custom3' class=active>Custom Measurement #3</label>
+              <label for='custom3-mt' class=active>Custom Measurement #3</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s5">
               <input type="text" disabled placeholder='' id='custom4-mt'>
-              <label for='custom4' class=active>Custom Measurement #4</label>
+              <label for='custom4-mt' class=active>Custom Measurement #4</label>
             </div>
 
             <div class="input-field col s5">
               <input type="text" disabled placeholder='' id='custom5-mt'>
-              <label for='custom5' class=active>Custom Measurement #5</label>
+              <label for='custom5-mt' class=active>Custom Measurement #5</label>
             </div>
           </div>
 
@@ -475,7 +470,7 @@
                   <i class='material-icons prefix'>edit</i>
                   <textarea name="color-pref" disabled class='materialize-textarea' id="notes-mt" cols="30"
                     rows="10"></textarea>
-                  <label for="notes">Enter Any Notes Here</label>
+                  <label for="notes-mt"></label>
                 </div>
               </div>
             </form>
@@ -484,7 +479,7 @@
           <div class="modal-footer">
             <a data-target="" class="print waves-effect waves-green btn-flat">Print</a>
             <a data-target="custom-measure" class="modal-close modal-trigger waves-effect waves-green btn-flat">Back</a>
-            <a data-target="" class="modal-close waves-effect waves-green btn-flat">Finished</a>
+            <a data-target="" class="finished modal-close waves-effect waves-green btn-flat">Finished</a>
           </div>
 
         </div>
@@ -973,7 +968,7 @@
 
         <div class="modal-footer">
           <a data-target="custom-measure" class="modal-close modal-trigger waves-effect waves-green btn-flat">Back</a>
-          <a data-target="" class="modal-close waves-effect waves-green btn-flat">Finished</a>
+          <a data-target="" class="finished modal-close waves-effect waves-green btn-flat">Finished</a>
         </div>
 
       </div>
@@ -993,8 +988,8 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Link to app.js -->
-  <script src='./assets/javascript/app.js'></script>
-  <script src='./assets/javascript/account.js'></script>
+  <script src='/javascript/app.js'></script>
+  <script src='/javascript/account.js'></script>
 
 </body>
 
