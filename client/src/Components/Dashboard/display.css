@@ -1,0 +1,8 @@
+.display {
+  overflow: auto;
+}
+
+.display::hover,
+.display::focus {
+  overflow-y: scroll;
+}

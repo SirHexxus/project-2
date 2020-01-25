@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.border {
+  border: 2px solid #132b52;
+}
+
+form {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h2 {
+  height: 80px;
+  background-color: #5558aa;
+  color: white;
+}

@@ -1,0 +1,22 @@
+/* .container {
+  background-color: white;
+} */
+
+.image {
+  background: url("../../Images/logobg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  background-color: black;
+}
+
+.nav-wrapper {
+  background-color: #5558aa;
+}
+
+.img {
+  position: relative;
+  bottom: 0px;
+  top: 300px;
+  min-height: 200px;
+}
