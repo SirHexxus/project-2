@@ -1,0 +1,15 @@
+.clientList {
+  margin-top: 5vh;
+}
+
+h1 {
+  color: #5558aa;
+}
+
+button {
+  background-color: #5558aa;
+  color: #fff;
+  width: fit-content;
+  height: 40px;
+  border-radius: 10%;
+}

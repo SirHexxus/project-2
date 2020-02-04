@@ -1,0 +1,9 @@
+.display {
+  overflow: clip;
+  float: right;
+}
+
+.display::hover,
+.display::focus {
+  overflow-y: scroll;
+}

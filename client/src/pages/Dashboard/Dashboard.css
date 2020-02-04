@@ -1,0 +1,23 @@
+.side {
+  border: 2px solid #7e55aa;
+  height: 90vh;
+  background-color: white;
+  opacity: 90%;
+  margin-top: 2vh;
+}
+
+.display {
+  height: 90vh;
+  width: 80vw;
+  background-color: white;
+  padding: 5vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  margin-left: 18vw;
+}
+
+.imgr {
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;
+}

@@ -1,0 +1,53 @@
+.scroll {
+  height: 900px;
+  width: 90%;
+  overflow: auto;
+  border: 2px solid #132b52;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #5558aa;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.measurements {
+  padding-left: 10vw;
+  overflow: auto;
+  color: #5558aa;
+}
+
+.measurements::hover,
+.measurements::focus {
+  overflow-y: scroll;
+}
+
+label {
+  color: #5558aa;
+}
+
+input {
+  color: #5558aa;
+  font: 25em;
+}
+
+.models {
+  height: 100vh;
+  border: 2px solid #132b52;
+  margin-left: 15vw;
+  max-height: 900px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .scroll {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .models {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,38 +1,104 @@
-# Project Starter
+# Stitches & Tape
 
-In this activity we will add the provided boilerplate to group project repos.
+### A project by **BBQ Lasagna**
 
-## Instructions
+## **Links**
 
-* Only one member of each group should complete this activity while the others watch.
+-   [Description](#description)
+-   [Our Team](#our-team)
+    -   [Devyn Barron](#devyn-barron)
+    -   [William Gonzales](#william-gonzales)
+    -   [Alicia Scott](#alicia-scott)
+    -   [James Stacy](#james-stacy)
+-   [Tech and Languages](#tech-and-languages)
+-   [What's Next?](#whats-next)
+-   [Contact Us](#contact-us)
 
-* Copy the entire folder to another location on your computers &mdash; wherever you would like your local copy of the group project to be.
+---
 
-* Rename the copied "Unsolved" folder to the name of your project.
+## **Description**
 
-* Open the copied project folder's `package.json` file and change its `name` property to the name of your project.
+The Stitches and Tape (S&T) measurement tracker is a simplified, yet dynamic, tracking tool. It allows you, the Clothier, to store and track all the measurements you might need to create anything from a simple shirt to a bespoke suit and everything else in-between for your clientele. Athleisure ware, business suits, cosplay, evening gowns, you'll have the needed measurements at the click of a button instead of wading through folders of measurement sheets.
 
-* CD to the root of the copied project folder with your terminal and run the following commands:
+Whether you're a novice designer or an experienced Clothier, S&T is the perfect tool. Unlike most measurement tracking tools on the market, S&T, provides you with a large scope measurement tracking. S&T offers you a selection of generic measurements, 50 measurements to track, and 5 custom measurements! You have the option to track these measurements in inches or centimeters (whichever best suits your needs). Also, you can capture any notes to relating to your client!
 
-  ```
-  git init
-  git add .
-  git commit -m "Initial commit"
-  ```
+---
 
-* Then copy the GitHub repo's remote SSH URL (the same URL you'd use to clone the repo).
+## **Our Team**
 
-* Run the following commands in your terminal, replacing <remote-url> with your GitHub repo's remote SSH URL.
+> ### Devyn Barron
+>
+> #### Front-End/Views
+>
+> Built up all of the React pages and styling.
+>
+> -   [Github](https://github.com/barrd001)
 
-  ```
-  git remote add origin <remote-url>
-  git push origin master
-  ```
+> ### William Gonzales
+>
+> #### Back-End/Controller
+>
+> Created Express Routes and authentication
+>
+> -   [Github](https://github.com/wgonz94)
 
-* If completed successfully you should see all of the files uploaded to GitHub.
+> ### Alicia Scott
+>
+> #### Back-End/Models
+>
+> Built the MongoDB Database, all Models, and Mongoose configuration
+>
+> -   [Github](https://github.com/avscott562)
 
-* All other group members should now clone the repo.
+> ### James Stacy
+>
+> #### Project Manager
+>
+> Managed Git (Including Pull Requests, Repo Hygiene, and Conflict Clearing), set project deadlines, set and maintained Style Guide and Commenting, and support for other roles as needed.
+>
+> -   [Github](https://github.com/SirHexxus)
 
-* Discuss as a group:
+---
 
-  * How would you now add changes to this project?
+## Tech and Languages
+
+> ### Front-End:
+>
+> -   React.js
+> -   Materialize
+> -   CSS3
+
+> ### Back-End:
+>
+> -   Node.js
+> -   Express.js
+> -   MongoDB
+> -   Mongoose
+> -   BCrypt.js
+
+> ### Deployment, Hosting, and Repository
+>
+> -   Repo Hosted on Github
+> -   App Deployed on Heroku
+> -   MongoDB Server Hosted with Atlas
+
+---
+
+## What's Next?
+
+-   React Native/Mobile App
+-   Ads/Paid Model
+-   Interactive Measurements Image
+-   Speech-to-Text
+-   Add Storage for Reference Images/Files/Documents
+-   Email Form for Clients to do their own measurements remotely
+-   Clothier and Client Profiles
+-   Customized Templates
+
+---
+
+## Contact Us
+
+You can reach our team at bbqlasagna@gmail.com .
+
+Or you can reach us individually via the Contact Info above.
